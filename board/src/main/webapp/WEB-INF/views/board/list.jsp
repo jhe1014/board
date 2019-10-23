@@ -1,3 +1,4 @@
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
 <!DOCTYPE html>
@@ -20,7 +21,7 @@
 	</thead>
 	
 	<tbody>
-		<c:forEach items="${list}" var="list">
+	<c:forEach items="${list}" var="list"> 
 			<tr>
 				<td>${list.bno}</td>
 				<td>${list.title}</td>
@@ -28,7 +29,7 @@
 				<td>${list.writer}</td>
 				<td>${list.viewCnt}</td>
 			</tr>
-		</c:forEach>
+	</c:forEach>
 	</tbody>
 </table>
 

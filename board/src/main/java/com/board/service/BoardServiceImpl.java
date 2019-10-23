@@ -16,7 +16,7 @@ public class BoardServiceImpl implements BoardService {
 	private BoardDAO dao;
 	
 	@Override
-	public List<BoardVO> list() throws Exception {
+	public List list() throws Exception {
 		return dao.list();
 	}
 }
