@@ -4,12 +4,15 @@
 <!DOCTYPE html>
 <html>
 <head>
+<link rel="stylesheet" href="/css/bootstrap.css">
 <meta charset="UTF-8">
 <title>게시물 목록</title>
 </head>
-<body>
 
-<table>
+<body>
+<div class="container">
+	<form id="boardFrom" name="boardForm" method="post">
+	<table class="table table-striped table-hover">
 	<thead>
 		<tr>
 			<th>번호</th>
@@ -33,7 +36,9 @@
 			</tr>
 	</c:forEach>
 	</tbody>
-</table>
+	</table>
+	</form>
+</div>
 
 </body>
 </html>
